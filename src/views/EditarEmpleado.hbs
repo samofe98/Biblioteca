@@ -1,0 +1,19 @@
+<form action="/ActualizarEmpleado/{{data.cedula_e}}" method="post">
+        <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="text" class="form-control" name="nombre" value="{{data.nombre}}" id="id del empleado" placeholder="Nombre">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+        <input type="text" class="form-control" name="apellido" value="{{data.apellido}}" id="id del empleado" placeholder="Apellido">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Cargo</label>
+        <input type="text" class="form-control" name="cargo" value="{{data.cargo}}" id="id del empleado" placeholder="Cargo">
+    </div>
+
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Actualizar datos de Empleado</button>
+    </div>
+</form>

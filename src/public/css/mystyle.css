@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: gray;
+  }
+
+.btn {
+    background-color: black;
+  }
+p{
+  color:beige
+}
+
+
+.imgiconos {
+  display: flex;
+  justify-content: flex-end; /* Alinea los íconos a la derecha */
+  padding-right: 10px; /* Agrega un espacio a la derecha para separar los íconos del borde derecho */
+  
+}
+
+.itemsmenu {
+  width: 50px;
+  height: 40px;
+  margin: 5px;
+  text-decoration: none;
+
+}
+
+.background {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 1200px;
+  height: 500px;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+
+}
+
+h1{
+  font-family: 'Raleway';
+  color: black;
+  font-size: 50px;
+  text-align: center;  
+}
+.iconoubicacion {
+  display: block; /* Asegura que el ícono sea un elemento de bloque para poder aplicar márgenes */
+  width: 62px;
+  height: 62px;
+  margin: 0 auto; /* Centra horizontalmente el ícono */
+  margin-top: 10px; /* Ajusta el margen superior para centrar verticalmente */
+}
+
+/* Para el login*/
+
+.bodylog{
+  background: gray;
+
+}
+img{
+  flex: auto;
+  width: 200px;
+  height: 200px;
+  
+}
+
+.containerlog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Agregado transform para centrar vertical y horizontalmente */
+  border-radius: 1px;
+}
+
+.containerlog .logreg-box{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 58%);
+  height: 100%;
+}
+
+.logreg-box .form-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  backdrop-filter:blur(20px);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: beige;
+}
+
+h2{
+  font-size:40px;
+  text-align: center;
+  color: beige;
+  font-family: 'Adlery Pro';
+  font-family: 'Raleway';
+}
+
+
+.form-box .input-box{
+  position: relative;
+  width: 340px;
+  height: 50px;
+  border-bottom: 2px solid black;
+  margin: 30px 0;
+
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.input-box label{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s ease;
+
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+  top: -5px;
+}
+
+.btn{
+  margin: 5px;
+  width: 100%;
+  height: 45px;
+  background: black;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size:16px;
+  color: beige;
+  font-weight: 500;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+
+}
+.navbar{
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  z-index:1;
+}
+
+.navbar-nav{
+  margin-left: auto;
+}
+
+nav a{
+  text-transform: uppercase;
+  font-size: 14px;
+
+}
+
+.title{
+  position: absolute;
+  border-radius: 10px;
+}
+
+.tittle.p-3.col-md-6{
+  background: transparent;
+  backdrop-filter:blur(20px);
+}
+.pt-3{
+  color:beige;
+  font-size: 18px;
+  font-family: 'Raleway';
+}
+
+.card-img-top{
+  margin: auto;
+  width: 300px;
+  height: 320px;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.card-img-top:hover{
+  transform: scale(1.1);
+}
+
+.card-text{
+  font-family: 'Raleway';
+  color: black;
+}
+.card-title{
+  font-family: 'Raleway';
+}
+
+.col-4{
+margin: auto;
+}
+
+
+footer p {
+  margin-bottom: 10px;
+  text-align: center;
+}

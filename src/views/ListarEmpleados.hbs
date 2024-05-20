@@ -1,0 +1,39 @@
+<img src="imag/Logo.png"> 
+<h1> Listado de empleados</h1>
+<hr>
+{{>btnBuscarEmpleado}}
+<hr>
+{{>btninsertarE}}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">cedula_e</th>
+      <th scope="col">nombre</th>
+      <th scope="col">apellido</th>
+      <th scope="col">fecha_vinculacion</th>
+      <th scope="col">correo_electronico</th>
+      <th scope="col">cargo</th>
+      <th>Acciones</th>
+    </tr>
+
+  
+  </thead>
+  <tbody>
+    {{#each data}}
+    <tr>
+      <td>{{cedula_e}}</td>
+      <td>{{nombre}}</td>
+      <td>{{apellido}}</td>
+      <td>{{fecha_vinculacion}}</td>
+      <td>{{correo_electronico}}</td>
+      <td>{{cargo}}</td>
+      <td>
+        <a href="/Eliminar/{{cedula_e}}" class="btn btn-primary">Eliminar</a>
+        <a href="/Editar/{{cedula_e}}" class="btn btn-primary">Editar</a>
+      </td>
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>

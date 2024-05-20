@@ -1,0 +1,49 @@
+<br>
+<br>
+<br>
+
+<img src="imag/Logo.png">
+
+<head>
+    <title>INTRANET BIBLIOTECA MUNDIAL</title>
+</head>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>INTRANET BIBLIOTECA MUNDIAL</title>
+    <script>
+        // Verifica si hay un mensaje de error en la URL
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const error = urlParams.get('error');
+            if (error) {
+                alert(decodeURIComponent(error));
+            }
+        }
+    </script>
+</head>
+
+<body class="bodylog">
+    <div class="containerlog">
+        <div class="logreg-box">
+            <div class="form-box login">
+                <h1>INTRANET BIBLIOTECA MUNDIAL</h1>
+                <form action="/iniciarSesion" method="post">
+                    <div class="input-box">
+                        <label for="correo_electronico" class="form-label"></label>
+                        <input type="email" name="correo_electronico" class="form-control" id="correo_electronico" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="contrasena" class="form-label"></label>
+                        <input type="password" name="contrasena" class="form-control" id="contrasena" placeholder="Contraseña" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Acceder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

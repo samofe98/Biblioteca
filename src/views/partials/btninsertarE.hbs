@@ -1,0 +1,58 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Insertar Empleado
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">REGISTRAR EMPLEADO</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form action="/GuardarEmpleado" method="post">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Cedula Empleado</label>
+                        <input type="text" class="form-control" name="cedula_e" id="cedula del empleado" placeholder="cedula Empleado">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" id="id del empleado" placeholder="Nombre">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" name="apellido" id="id del empleado" placeholder="Apellido">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Fecha de Vinculacion</label>
+                        <input type="text" class="form-control" name="fecha_vinculacion" id="id del empleado" placeholder="Fecha de vinculacion">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+                        <input type="text" class="form-control" name="correo_electronico" id="id del empleado" placeholder="correo electronico">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+                        <input type="text" class="form-control" name="contrasena" id="id del empleado" placeholder="contrasena">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Cargo</label>
+                        <input type="text" class="form-control" name="cargo" id="id del empleado" placeholder="Cargo">
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
